@@ -1,0 +1,30 @@
+name: "Export and publish slides"
+
+  # Only add manual trigger for now
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Convert markdown to PDF
+        uses: KoharaKazuya/marp-cli-action@v3
+        # Potentially add config file to repo or extra options?
+        with:
+          config-file:: ./.marprc-ci.yml
+
+      - name: Store output PDF
+        uses: actions/upload-artifact@v2
+        with:
+          name: slides
+          path: ./slides
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./slides
