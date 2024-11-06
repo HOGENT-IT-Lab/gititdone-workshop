@@ -1,5 +1,5 @@
 name: "Export and publish slides"
-
+on:
   # Only add manual trigger for now
   workflow_dispatch:
 
