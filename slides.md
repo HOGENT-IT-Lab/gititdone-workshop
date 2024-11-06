@@ -10,7 +10,7 @@ backgroundImage: url('https://marp.app/assets/hero-background.svg')
 
 # **Marp**
 
-Markdown Presentation Ecosystem
+Markdown to slides test voor GitItDone
 
 https://marp.app/
 
@@ -31,3 +31,17 @@ foobar
 
 foobar
 ```
+
+---
+
+# Dit is een kersverse slide!
+
+Je kan dus eenvoudig een slide toevoegen hé! Zeer handig wel denk ik dan
+
+```markdown
+
+Dit is een markdown kadertje voor geen specifieke reden (noch onspecifieke reden...)
+
+```
+
+Hier is nog wat tekst onderaan!
