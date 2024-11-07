@@ -6,17 +6,15 @@ backgroundColor: #fff
 backgroundImage: url('https://marp.app/assets/hero-background.svg')
 ---
 
-![bg left:40% 80%](https://marp.app/assets/marp.svg)
+![bg left:40% 80%](./img/logo.png)
 
-# **Marp**
+# **GitItDone**
 
-Markdown to slides test voor GitItDone
-
-https://marp.app/
+Slides voor GitItDone workshop van het IT-lab
 
 ---
 
-# How to write slides
+<!-- # How to write slides
 
 Split pages by horizontal ruler (`---`). It's very simple! :satisfied:
 
@@ -32,7 +30,7 @@ foobar
 foobar
 ```
 
----
+--- -->
 
 # Dit is een kersverse slide!
 
