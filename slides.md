@@ -46,8 +46,14 @@ Hier is nog wat tekst onderaan!
 
 ---
 
-# Wat is git nu precies?
-- Version control system!!
+
+![Git logo](./img/Git-Logo-2Color.png)
+
+---
+
+
+# Wat is Git?
+- Version control system
 - Sprekend voorbeeldje toevoegen met visuele weergave
 
 ---
@@ -86,10 +92,14 @@ Hier is nog wat tekst onderaan!
 
 # Git workflow
 
-- Overzicht van local flow en met remote erbij (image toevoegen)
-- Veranderingen bijhouden en zo doen aan version control!
+![bg right:60% 80%](./img/git-workflow.png)
+
+<!-- - Veranderingen bijhouden en zo doen aan version control!
 - Met remote: zelfde concept, maar collaboratief!
-- Meerdere slides hiervan maken hoor!
+- Meerdere slides hiervan maken hoor! -->
+<!-- IMG source: https://www.dezlearn.com/getting-started-with-git/ -->
+
+
 
 
 ---
