@@ -243,6 +243,25 @@ git commit -m "DIT IS MIJN COMMIT MESSAGE"
 git merge
 ```
 
+---
+
+# Basiscommando's - lokaal
+
+- Unstagen van wijziging
+```
+git reset
+```
+
+- Recentste commit ongedaan maken
+```
+git reset HEAD~1
+```
+
+- Commit reverten met nieuwe commit
+```
+git revert
+```
+<!-- TO DO beter uitleggen in slides! -->
 
 ----
 # Basiscommando's - remote
