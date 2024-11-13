@@ -395,14 +395,40 @@ Laat ons eens een merge conflict veroorzaken en ook oplossen...
 
 ---
 
-# GitHub pages
+# GitHub Pages
 
 - Manier om statische websites te hosten
 - Use case: deze slides! (in combinatie met GitHub Actions)
 - Eenvoudige websites, basic applicaties, ...
 
----
+![bg right:50% 90%](./img/pages_example.png)
 
+---
+# GitHub Actions
+
+- Automatisatie en workflows (pipelines, testen, software bouwen,...)
+- Zelf instellen van workflows en heel veel customisation
+
+---
+# GitHub Actions - voorbeeld
+
+```
+name: "Export and publish slides"
+on:
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Convert markdown to PDF
+        uses: KoharaKazuya/marp-cli-action@v3
+```
+---
 
 # Git - advanced topics 
 
