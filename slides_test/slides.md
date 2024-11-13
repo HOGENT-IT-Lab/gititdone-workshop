@@ -192,7 +192,15 @@ foobar
 - git push (remote nodig!) -->
 
 ---
+# Basiscommando's - algemeen
 
+- Huidige toestand/situatie bekijken
+```
+git status  
+ ```
+ Gebruik dit commando na/voor elk ander commando!!
+
+---
 
 # Basiscommando's - lokaal
 
@@ -261,15 +269,16 @@ Belangrijk! Je moet een remote repository ingesteld hebben
 git remote
 ```
 
-- Remote repository naar lokale werkomgeving
+- Remote toevoegen aan lokale repository (bv origin)
+```
+git remote add origin <URL>
+```
+
+- Remote repository naar lokale werkomgeving (fetch + merge)
 
 ```
 git pull
 ```
-
-  Pull = fetch + merge!!
-
-
 
 ---
 
