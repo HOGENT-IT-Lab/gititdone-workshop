@@ -111,6 +111,17 @@ Hier is nog wat tekst onderaan!
 - Kom tot overeenkomst/structuur met jouw team (samenwerken)
 
 ---
+
+# Git - wat is een .gitignore bestand?
+
+- Soms wil je sommige zaken niet bijhouden in jouw version control (denk aan wachtwoorden, sensitieve data,...) 
+
+- .gitignore definieert wat je niet wilt tracken (voorbeeld met demo!)
+
+- Er bestaan heel wat templates voor verschillende projecten!
+
+
+---
 # Git workflow
 
 ![bg right:60% 80%](./img/git-workflow.png)
@@ -121,15 +132,6 @@ Hier is nog wat tekst onderaan!
 <!-- IMG source: https://www.dezlearn.com/getting-started-with-git/ -->
 
 
-
-
----
-
-# Git - wat is een .gitignore bestand?
-
-- Soms wil je sommige zaken niet bijhouden in jouw version control (denk aan wachtwoorden, sensitieve data,...) 
-
-- .gitignore definieert wat je niet wilt tracken (voorbeeld met demo!)
 
 
 ---
@@ -214,4 +216,5 @@ TO DO
 
 - Git(Hub) guide van HOGENT - https://hogenttin.github.io/git-hogent-gids/
 - Leren branchen - https://learngitbranching.js.org/
+- Templates .gitignore - https://github.com/github/gitignore
 - Wat als het allemaal in de soep loopt? - https://ohshitgit.com/ 
