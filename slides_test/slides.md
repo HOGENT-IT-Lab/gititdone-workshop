@@ -90,16 +90,27 @@ Hier is nog wat tekst onderaan!
 
 ---
 
-# Git - wat is een commit nu precies?
+# Git - commits
 
-- Uitleg dat alle veranderingen worden bijgehouden in een 'commit'
+- Om veranderingen bij te houden, maken we gebruik van *commits*
+- Commits bevatten één of meerdere wijzigingen in onze repository
+- Commits hebben altijd een bijhorende *commit message*
+- Commits hebben altijd een unieke *commit hash*
+<!-- - Uitleg dat alle veranderingen worden bijgehouden in een 'commit'
 - Elke commit krijgt dan ook een commit hash (lange en korte eens uitleggen)
 - In een commit kunnen meerdere veranderingen tegelijk zitten -> we proberen ze allemaal atomair te houden!
 - Commit messages - BELANGRIJK!!!
-- Wat is HEAD en HEAD(~1)
+- Wat is HEAD en HEAD(~1) -->
 
 ---
 
+# Commits - tips en best practices
+
+- Probeer je commits *atomair* te houden! (commit heeft een doel)
+- Schrijf duidelijke commit messages!
+- Kom tot overeenkomst/structuur met jouw team (samenwerken)
+
+---
 # Git workflow
 
 ![bg right:60% 80%](./img/git-workflow.png)
