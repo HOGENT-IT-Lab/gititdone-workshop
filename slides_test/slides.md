@@ -136,6 +136,25 @@ foobar
 
 - Er bestaan heel wat templates voor verschillende projecten!
 
+---
+
+# .gitignore - voorbeeld Java project
+```
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# Package Files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+```
 
 ---
 # Git workflow
