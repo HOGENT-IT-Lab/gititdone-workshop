@@ -401,6 +401,8 @@ Laat ons eens een merge conflict veroorzaken en ook oplossen...
 - Use case: deze slides! (in combinatie met GitHub Actions)
 - Eenvoudige websites, basic applicaties, ...
 
+![bg right:50% 90%](./img/pages_example.png)
+
 ---
 # GitHub Actions
 
