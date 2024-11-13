@@ -1,4 +1,5 @@
 ---
+marp: true
 theme: gaia
 _class: lead
 paginate: true
@@ -13,6 +14,8 @@ backgroundImage: url('https://marp.app/assets/hero-background.svg')
 Slides voor GitItDone workshop van het IT-lab
 
 ---
+
+<!-- Link naar Marp documentatie: https://marpit.marp.app/ -->
 
 <!-- # How to write slides
 
@@ -32,19 +35,6 @@ foobar
 
 --- -->
 
-# Dit is een kersverse slide!
-
-Je kan dus eenvoudig een slide toevoegen hé! Zeer handig wel denk ik dan
-
-```markdown
-
-Dit is een markdown kadertje voor geen specifieke reden (noch onspecifieke reden...)
-
-```
-
-Hier is nog wat tekst onderaan!
-
----
 
 
 ![Git logo](./img/Git-Logo-2Color.png)
@@ -89,16 +79,38 @@ Hier is nog wat tekst onderaan!
 
 ---
 
-# Git - wat is een commit nu precies?
+# Git - commits
 
-- Uitleg dat alle veranderingen worden bijgehouden in een 'commit'
+- Om veranderingen bij te houden, maken we gebruik van *commits*
+- Commits bevatten één of meerdere wijzigingen in onze repository
+- Commits hebben altijd een bijhorende *commit message*
+- Commits hebben altijd een unieke *commit hash*
+<!-- - Uitleg dat alle veranderingen worden bijgehouden in een 'commit'
 - Elke commit krijgt dan ook een commit hash (lange en korte eens uitleggen)
 - In een commit kunnen meerdere veranderingen tegelijk zitten -> we proberen ze allemaal atomair te houden!
 - Commit messages - BELANGRIJK!!!
-- Wat is HEAD en HEAD(~1)
+- Wat is HEAD en HEAD(~1) -->
 
 ---
 
+# Commits - tips en best practices
+
+- Probeer je commits *atomair* te houden! (commit heeft een doel)
+- Schrijf duidelijke commit messages!
+- Kom tot overeenkomst/structuur met jouw team (samenwerken)
+
+---
+
+# Git - wat is een .gitignore bestand?
+
+- Soms wil je sommige zaken niet bijhouden in jouw version control (denk aan wachtwoorden, sensitieve data,...) 
+
+- .gitignore definieert wat je niet wilt tracken (voorbeeld met demo!)
+
+- Er bestaan heel wat templates voor verschillende projecten!
+
+
+---
 # Git workflow
 
 ![bg right:60% 80%](./img/git-workflow.png)
@@ -113,24 +125,15 @@ Hier is nog wat tekst onderaan!
 
 ---
 
-# Git - wat is een .gitignore bestand?
-
-- Soms wil je sommige zaken niet bijhouden in jouw version control (denk aan wachtwoorden, sensitieve data,...) 
-
-- .gitignore definieert wat je niet wilt tracken (voorbeeld met demo!)
-
-
----
-
 # Git - command line versus GUI
 
-- Git kan je zowel CLI als GUI gebruiken
+- Git kan je zowel via de CLI als GUI gebruiken
 
-- CLI: vrij snel en efficient
+- CLI: snel en efficiënt, iets hogere learning curve (maar niet veel!)
 
-- GUI: handig voor een beter overzicht soms, zit in veel IDE's ingebakken (voorbeeld GitKraken)
+- GUI: handig voor een visueel overzicht, maar er gebeurt veel *under the hood*
 
----
+<!-- ---
 
 
 # Git - command line en basiscommando's
@@ -140,25 +143,138 @@ Hier is nog wat tekst onderaan!
 - git pull
 - git add
 - git commit 
-- git push (remote nodig!)
+- git push (remote nodig!) -->
 
 ---
 
 
-# Git - meer basiscommando's
+# Basiscommando's - lokaal
 
-- git status (BELANGRIJK)
-- git log
+- Een repository lokaal binnenhalen (klonen)
+```
+git clone <URL>
+```
+- Wijzigingen in working directory aan staging toevoegen
+```
+git add <FILE>
+```
+- Alles toevoegen aan staging
+```
+git add .
+```
+
+---
+
+
+# Basiscommando's - lokaal
+
+- Wijzigingen in stage aan de lokale git-repository toevoegen
+
+```
+git commit
+```
+
+- Meteen een (duidelijke!) commit message toevoegen
+```
+git commit -m "DIT IS MIJN COMMIT MESSAGE"
+```
+
+---
+
+
+# Basiscommando's - lokaal
+
+- Lokale git-repository naar working directory
+```
+git merge
+```
+
+
+----
+# Basiscommando's - remote
+
+- Lokale repository naar een remote repository
+```
+git push
+```
+
+- Remote repository naar lokale repository
+```
+git fetch
+```
+
+Belangrijk! Je moet een remote repository ingesteld hebben
+
+--- 
+
+# Basiscommando's - remote
+
+- Checken of er een remote is ingesteld
+
+```
+git remote
+```
+
+- Remote repository naar lokale werkomgeving
+
+```
+git pull
+```
+
+  Pull = fetch + merge!!
+
+
+
+---
+
+
+# Order matters...
+
+![bg right:50% 80%](./img/git_grappig_plaatje.png)
+
+--- 
+# Demo basic workflow
+
+- Klassieke git workflow
+```
+git add .
+
+git commit -m "Fix myFunction function: supports multiple parameters now"
+
+git pull
+
+git push
+```
 
 ---
 
 
 # Git - branches
 
-- Wat zijn branches? 
-- Gerelateerde commando's
+- Ruimte voor tekst, uitleg en/of oubollige meme?
+![bg right:60% 80%](./img/branching_visual_cue.png)
+
+
 
 ---
+# Branches - commando's
+
+- Nieuwe branch aanmaken
+
+```
+git branch <NAAMBRANCH>
+```
+- Wisselen naar branch 
+```
+git checkout <NAAMBRANCH>
+```
+OF
+```
+git switch <NAAMBRANCH>
+```
+
+---
+
 
 # Git - merge conflicten
 
@@ -168,6 +284,11 @@ Hier is nog wat tekst onderaan!
 
 ---
 
+# Demo merge conflict
+
+Laat ons eens een merge conflict veroorzaken en ook oplossen...
+
+---
 # Git - samenwerken
 
 - Nood aan een remote repository (niet hetzelfde als lokaal)
@@ -202,4 +323,5 @@ TO DO
 
 - Git(Hub) guide van HOGENT - https://hogenttin.github.io/git-hogent-gids/
 - Leren branchen - https://learngitbranching.js.org/
+- Templates .gitignore - https://github.com/github/gitignore
 - Wat als het allemaal in de soep loopt? - https://ohshitgit.com/ 
