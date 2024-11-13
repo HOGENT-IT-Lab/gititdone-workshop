@@ -45,6 +45,7 @@ foobar
 # Wat is Git?
 - Git is een version control system (VCS)
   - Hou een historie bij van je project en alle wijzigingen
+  - Wijzigingen worden systematisch bijgehouden
   - Keer eenvoudig terug naar oudere versies (handig bij fouten...)
   - Leuk om evolutie en voortgang van project te zien
 
