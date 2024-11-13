@@ -200,6 +200,11 @@ git status
  ```
  Gebruik dit commando na/voor elk ander commando!!
 
+- Historie/commits weergeven
+```
+git log
+```
+
 ---
 
 # Basiscommando's - lokaal
