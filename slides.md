@@ -73,9 +73,16 @@ foobar
 
 # Git configureren
 
-- Email en naam goedzetten
-  
-- verschil tussen globaal en lokaal configureren (context) - zeker voor geavanceerde gebruikers interessant
+- Email en naam instellen
+```
+ git config –global user.name <USERNAME>
+```
+```
+ git config –global user.email <JOUW@EMAIL.ADRES>
+ ```
+- Gebruikersnaam en email - laat deze matchen met jouw GitHub-account! (zie later)
+
+- Mensen die meerdere accounts hebben: lokaal versus globale git config!
 
 ---
 
@@ -83,7 +90,8 @@ foobar
 
 - Waarvoor dienen SSH-sleutels? (kort)
   
-- Hoe genereeer ik zo'n sleutelpaar?
+- Hoe genereer ik zo'n sleutelpaar? `ssh-keygen` 
+- Modern sleutelpaar: `ssh-keygen -t ed25519`
 
 - Public key toevoegen aan GitHub (demo?)
 
@@ -91,6 +99,13 @@ foobar
 
 ---
 
+# Demo GitHub - account en keypair
+
+- Maak een GitHub account (indien nog geen...)
+- Genereer een SSH-sleutelpaar (LET OP! check eerst of er eentje bestaat...)
+- Test met `ssh -T git@github.com`
+
+---
 # Git - commits
 
 - Om veranderingen bij te houden, maken we gebruik van *commits*
@@ -113,7 +128,7 @@ foobar
 
 ---
 
-# Git - wat is een .gitignore bestand?
+# Wat is een .gitignore bestand?
 
 - Soms wil je sommige zaken niet bijhouden in jouw version control (denk aan wachtwoorden, sensitieve data,...) 
 
@@ -121,6 +136,25 @@ foobar
 
 - Er bestaan heel wat templates voor verschillende projecten!
 
+---
+
+# .gitignore - voorbeeld Java project
+```
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# Package Files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+```
 
 ---
 # Git workflow
