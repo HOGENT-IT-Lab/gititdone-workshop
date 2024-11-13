@@ -289,6 +289,11 @@ git switch <NAAMBRANCH>
 
 ---
 
+# Demo merge conflict
+
+Laat ons eens een merge conflict veroorzaken en ook oplossen...
+
+---
 # Git - samenwerken
 
 - Nood aan een remote repository (niet hetzelfde als lokaal)
