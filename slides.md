@@ -89,6 +89,15 @@ Hier is nog wat tekst onderaan!
 
 ---
 
+# Git - wat is een commit nu precies?
+
+- Uitleg dat alle veranderingen worden bijgehouden in een 'commit'
+- Elke commit krijgt dan ook een commit hash (lange en korte eens uitleggen)
+- In een commit kunnen meerdere veranderingen tegelijk zitten -> we proberen ze allemaal atomair te houden!
+- Commit messages - BELANGRIJK!!!
+- Wat is HEAD en HEAD(~1)
+
+---
 
 # Git workflow
 
@@ -101,16 +110,6 @@ Hier is nog wat tekst onderaan!
 
 
 
-
----
-
-# Git - wat is een commit nu precies?
-
-- Uitleg dat alle veranderingen worden bijgehouden in een 'commit'
-- Elke commit krijgt dan ook een commit hash (lange en korte eens uitleggen)
-- In een commit kunnen meerdere veranderingen tegelijk zitten -> we proberen ze allemaal atomair te houden!
-- Commit messages - BELANGRIJK!!!
-- Wat is HEAD en HEAD(~1)
 
 ---
 
