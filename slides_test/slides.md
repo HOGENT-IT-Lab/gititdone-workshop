@@ -53,7 +53,11 @@ foobar
 
 # Een beetje geschiedenis...
 
-- The man, the myth, the legend: Linus Torvalds...
+- Ontworpen en uitgebracht in 2005
+- Gemaakt door Linus Torvalds voor development van Linux
+- Grote populariteit en meestgebruikte VCS vandaag de dag
+
+![bg right:40% 90%](./img/Linus_Torvalds.jpg)
 
 ---
 
