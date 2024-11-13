@@ -256,10 +256,30 @@ git push
 
 # Git - branches
 
-- Wat zijn branches? 
-- Gerelateerde commando's
+- Ruimte voor tekst, uitleg en/of oubollige meme?
+![bg right:60% 80%](./img/branching_visual_cue.png)
+
+
 
 ---
+# Branches - commando's
+
+- Nieuwe branch aanmaken
+
+```
+git branch <NAAMBRANCH>
+```
+- Wisselen naar branch 
+```
+git checkout <NAAMBRANCH>
+```
+OF
+```
+git switch <NAAMBRANCH>
+```
+
+---
+
 
 # Git - merge conflicten
 
