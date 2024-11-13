@@ -43,8 +43,10 @@ foobar
 
 
 # Wat is Git?
-- Version control system
-- Sprekend voorbeeldje toevoegen met visuele weergave
+- Git is een version control system (VCS)
+  - Hou een historie bij van je project en alle wijzigingen
+  - Keer eenvoudig terug naar oudere versies (handig bij fouten...)
+  - Leuk om evolutie en voortgang van project te zien
 
 ---
 
@@ -56,7 +58,12 @@ foobar
 
 # Git installeren
 
-- Stappen per OS kort eens toelichten (niet zo moeilijk)
+- Beschikbaar voor Windows, MacOS en Linux (uiteraard)
+  - Download voor jouw systeem de juiste [versie](https://git-scm.com/downloads)
+  - Windows: [Git Bash](https://gitforwindows.org/) is ook een optie
+
+![bg right:50% 80%](./img/git_download_prentje.png)
+
 ---
 
 # Git configureren
