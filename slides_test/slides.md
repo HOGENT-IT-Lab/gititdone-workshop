@@ -193,10 +193,63 @@ git commit -m "DIT IS MIJN COMMIT MESSAGE"
 ---
 
 
-# Git - meer basiscommando's
+# Basiscommando's - lokaal
 
-- git status (BELANGRIJK)
-- git log
+- Lokale git-repository naar working directory
+```
+git merge
+```
+
+
+----
+# Basiscommando's - remote
+
+- Lokale repository naar een remote repository
+```
+git push
+```
+
+- Remote repository naar lokale repository
+```
+git fetch
+```
+
+Belangrijk! Je moet een remote repository ingesteld hebben
+
+--- 
+
+# Basiscommando's - remote
+
+- Checken of er een remote is ingesteld
+
+```
+git remote
+```
+
+- Remote repository naar lokale werkomgeving
+
+```
+git pull
+```
+
+  Pull = fetch + merge!!
+
+
+
+---
+
+# Demo basic workflow
+
+- Klassieke git workflow
+```
+git add .
+
+git commit -m "Fix myFunction function: supports multiple parameters now"
+
+git pull
+
+git push
+```
 
 ---
 
