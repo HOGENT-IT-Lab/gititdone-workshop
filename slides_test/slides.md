@@ -275,6 +275,7 @@ git revert
 ```
 git push
 ```
+Tip: stel pushen niet uit! Vermijd merge conflicten (zie later)
 
 - Remote repository naar lokale repository
 ```
