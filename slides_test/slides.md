@@ -238,6 +238,12 @@ git pull
 
 ---
 
+
+# Order matters...
+
+![bg right:50% 80%](./img/git_grappig_plaatje.png)
+
+--- 
 # Demo basic workflow
 
 - Klassieke git workflow
