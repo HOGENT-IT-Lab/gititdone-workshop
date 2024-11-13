@@ -208,8 +208,11 @@ git log
 ---
 
 # Basiscommando's - lokaal
-
-- Een repository lokaal binnenhalen (klonen)
+- Van een lokale map een git repository maken
+```
+git init
+```
+- Een repository binnenhalen (klonen)
 ```
 git clone <URL>
 ```
@@ -217,16 +220,17 @@ git clone <URL>
 ```
 git add <FILE>
 ```
-- Alles toevoegen aan staging
-```
-git add .
-```
+
 
 ---
 
 
 # Basiscommando's - lokaal
 
+- Alles toevoegen aan staging
+```
+git add .
+```
 - Wijzigingen in stage aan de lokale git-repository toevoegen
 
 ```
