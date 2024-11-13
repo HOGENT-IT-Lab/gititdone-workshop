@@ -144,7 +144,7 @@ Hier is nog wat tekst onderaan!
 
 - GUI: handig voor een visueel overzicht, maar er gebeurt veel *under the hood*
 
----
+<!-- ---
 
 
 # Git - command line en basiscommando's
@@ -154,7 +154,41 @@ Hier is nog wat tekst onderaan!
 - git pull
 - git add
 - git commit 
-- git push (remote nodig!)
+- git push (remote nodig!) -->
+
+---
+
+
+# Basiscommando's - lokaal
+
+- Een repository lokaal binnenhalen (klonen)
+```
+git clone <URL>
+```
+- Wijzigingen in working directory aan staging toevoegen
+```
+git add <FILE>
+```
+- Alles toevoegen aan staging
+```
+git add .
+```
+
+---
+
+
+# Basiscommando's - lokaal
+
+- Wijzigingen in stage aan de lokale git-repository toevoegen
+
+```
+git commit
+```
+
+- Meteen een (duidelijke!) commit message toevoegen
+```
+git commit -m "DIT IS MIJN COMMIT MESSAGE"
+```
 
 ---
 
