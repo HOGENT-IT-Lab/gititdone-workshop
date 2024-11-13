@@ -138,11 +138,11 @@ Hier is nog wat tekst onderaan!
 
 # Git - command line versus GUI
 
-- Git kan je zowel CLI als GUI gebruiken
+- Git kan je zowel via de CLI als GUI gebruiken
 
-- CLI: vrij snel en efficient
+- CLI: snel en efficiënt, iets hogere learning curve (maar niet veel!)
 
-- GUI: handig voor een beter overzicht soms, zit in veel IDE's ingebakken (voorbeeld GitKraken)
+- GUI: handig voor een visueel overzicht, maar er gebeurt veel *under the hood*
 
 ---
 
