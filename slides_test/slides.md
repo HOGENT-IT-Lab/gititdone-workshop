@@ -73,9 +73,16 @@ foobar
 
 # Git configureren
 
-- Email en naam goedzetten
-  
-- verschil tussen globaal en lokaal configureren (context) - zeker voor geavanceerde gebruikers interessant
+- Email en naam instellen
+```
+ git config –global user.name <USERNAME>
+```
+```
+ git config –global user.email <JOUW@EMAIL.ADRES>
+ ```
+- Gebruikersnaam en email - laat deze matchen met jouw GitHub-account! (zie later)
+
+- Mensen die meerdere accounts hebben: lokaal versus globale git config!
 
 ---
 
