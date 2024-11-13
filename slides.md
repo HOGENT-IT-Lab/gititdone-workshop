@@ -45,6 +45,7 @@ foobar
 # Wat is Git?
 - Git is een version control system (VCS)
   - Hou een historie bij van je project en alle wijzigingen
+  - Wijzigingen worden systematisch bijgehouden
   - Keer eenvoudig terug naar oudere versies (handig bij fouten...)
   - Leuk om evolutie en voortgang van project te zien
 
@@ -52,7 +53,11 @@ foobar
 
 # Een beetje geschiedenis...
 
-- The man, the myth, the legend: Linus Torvalds...
+- Ontworpen en uitgebracht in 2005
+- Gemaakt door Linus Torvalds voor development van Linux
+- Grote populariteit en meestgebruikte VCS vandaag de dag
+
+![bg right:40% 90%](./img/Linus_Torvalds.jpg)
 
 ---
 
