@@ -208,8 +208,11 @@ git log
 ---
 
 # Basiscommando's - lokaal
-
-- Een repository lokaal binnenhalen (klonen)
+- Van een lokale map een git repository maken
+```
+git init
+```
+- Een repository binnenhalen (klonen)
 ```
 git clone <URL>
 ```
@@ -217,16 +220,17 @@ git clone <URL>
 ```
 git add <FILE>
 ```
-- Alles toevoegen aan staging
-```
-git add .
-```
+
 
 ---
 
 
 # Basiscommando's - lokaal
 
+- Alles toevoegen aan staging
+```
+git add .
+```
 - Wijzigingen in stage aan de lokale git-repository toevoegen
 
 ```
@@ -275,6 +279,7 @@ git revert
 ```
 git push
 ```
+Tip: stel pushen niet uit! Vermijd merge conflicten (zie later)
 
 - Remote repository naar lokale repository
 ```
@@ -370,18 +375,31 @@ Laat ons eens een merge conflict veroorzaken en ook oplossen...
 ---
 # Git - samenwerken
 
-- Nood aan een remote repository (niet hetzelfde als lokaal)
+- Nood aan een remote repository!
 - GitHub is een voorbeeld van zo'n provider/platform
-- Verschill tussen Git en GitHub kort toelichten
+- Git != GitHub
+- Alternatieven bestaan ook (GitLab, Gitea, ...)
+
 
 
 ---
 
 # GitHub specifiek
 
-- Remote repositories, platform om samen te werken
-- Heel wat specifieke mogelijkheden (Actions, Pages,...)
-- Pull requests!!
+- Heel wat specifieke mogelijkheden binnen het platform
+- GitHub Actions: automatisatie, testen en meer
+- GitHub Pages: host statische websites en projecten gratis
+- Webhooks: stel meldingen in voor veranderingen in repository (Discord, Slack, mail, ...)
+- Pull requests: review en bekijk code/wijzigingen voor een push
+
+
+---
+
+# GitHub pages
+
+- Manier om statische websites te hosten
+- Use case: deze slides! (in combinatie met GitHub Actions)
+- Eenvoudige websites, basic applicaties, ...
 
 ---
 
@@ -391,9 +409,9 @@ Laat ons eens een merge conflict veroorzaken en ook oplossen...
 TO DO
 
 - git rebase: in detail eens overgaan
-- Meer advanced commando's?
+<!-- - Meer advanced commando's? -->
 - GitKraken of andere GUI tool demonsteren?
-- Website hosten met GitHub pages -> kan gratis voor statische sites (zie huidige slides)
+<!-- - Website hosten met GitHub pages -> kan gratis voor statische sites (zie huidige slides) -->
 - DEMO's van vanalles moeten nog toegevoegd worden! (repo's, specifieke flows, use cases,...)
 
 ---
@@ -403,4 +421,4 @@ TO DO
 - Git(Hub) guide van HOGENT - https://hogenttin.github.io/git-hogent-gids/
 - Leren branchen - https://learngitbranching.js.org/
 - Templates .gitignore - https://github.com/github/gitignore
-- Wat als het allemaal in de soep loopt? - https://ohshitgit.com/ 
+- Wat als het allemaal in de soep loopt? - https://ohshitgit.com/
