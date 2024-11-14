@@ -143,7 +143,7 @@ user.name=sionverschraege
 
 Data **encrypteren** en **handtekenen**
 Hoe genereer ik zo'n sleutelpaar? `ssh-keygen -t ed25519 -C "email@hogent.be"` 
-- aanhaalingstekens (`"`) moeten er staan
+- aanhalingstekens (`"`) moeten er staan
 
 Terug te vinden in `[je home folder]/.ssh`:
 ![keys](./img/keys.png)
@@ -453,38 +453,63 @@ Al dit en meer in de volgende live demo
 
 # Git - branches
 
-- Ruimte voor tekst, uitleg en/of oubollige meme?
-![bg right:60% 80%](./img/branching_visual_cue.png)
+- "Maar ik wil niet voor elke commit merge conflicts oplossen!"
+- "Maar ik wil een versie van mijn software afsplitsen!"
+- "Maar ik wil mijn code niet officieel maken vóór alles werkt!"
 
-
+![bg right:50% 80%](./img/branching_visual_cue.png)
 
 ---
+
+# Git - branches
+
+- Oplossing: **branches**
+- Branches zijn **parallelle versies**
+- Branches kunnen later weer **samengevoegd** worden
+
+![bg right:50% 80%](./img/branching_visual_cue.png)
+
+---
+
 # Branches - commando's
 
+- Je wil vertrekken van commit X. Ga naar die commit met
+```
+git checkout <COMMIT_HASH>
+```
+- Dit mag een kortere hash zijn
 - Nieuwe branch aanmaken
-
 ```
 git branch <NAAMBRANCH>
 ```
+- Voorlopig is dit gewoon een **verwijzing** naar de gekozen commit
+![bg right:40% 80%](./img/branch1.png)
+
+
+---
+
+# Branches - commando's
+
 - Wisselen naar branch 
 ```
 git checkout <NAAMBRANCH>
 ```
-OF
+- Maak een commit op die branch
 ```
-git switch <NAAMBRANCH>
+git add <BESTAND>
+git commit -m "<COMMIT MESSAGE>"
 ```
-
+![bg right:40% 80%](./img/branch2.png)
 
 ---
-# Git - samenwerken
 
-- Nood aan een remote repository!
-- GitHub is een voorbeeld van zo'n provider/platform
-- Git != GitHub
-- Alternatieven bestaan ook (GitLab, Gitea, ...)
+# Branches - doe het zelf
 
-
+- Zoek in de zandbak-repo je eigen commit
+- Maak een branch vertrekkende van die commit
+  - Gebruik een goede en unieke naam!
+- Verander je eigen file een beetje en push naar de nieuwe branch
+- Bewonder alle [branches op github](https://github.com/HOGENT-IT-Lab/gititdone-zandbak/branches)
 
 ---
 
@@ -534,15 +559,20 @@ jobs:
 ```
 ---
 
-# Git - advanced topics 
+# Git rebase 
 
-TO DO
+- "Ik wou dat mijn branch begon op een andere commit!"
+- "Ik wou dat mijn commit verderbouwde op een andere commit!"
+- Oplossing: aanpassen van de **parent** van een commit of branch met `git rebase`
 
-- git rebase: in detail eens overgaan
-<!-- - Meer advanced commando's? -->
-- GitKraken of andere GUI tool demonsteren?
-<!-- - Website hosten met GitHub pages -> kan gratis voor statische sites (zie huidige slides) -->
-- DEMO's van vanalles moeten nog toegevoegd worden! (repo's, specifieke flows, use cases,...)
+---
+
+```
+git rebase main newBranch
+```
+
+![bg w:60% 60%](./img/branch2.png)
+![bg w:60% 60%](./img/branchRebase.png)
 
 ---
 
