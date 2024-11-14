@@ -489,6 +489,18 @@ git branch <NAAMBRANCH>
 ---
 
 # Branches - commando's
+- Pushen naar remote:
+```
+git push -u origin <NAAMBRANCH>
+```
+- Of meteen branch maken op local en remote:
+```
+git checkout -b <NIEUWEBRANCH>
+```
+
+---
+
+# Branches - commando's
 
 - Wisselen naar branch 
 ```
@@ -508,6 +520,7 @@ git commit -m "<COMMIT MESSAGE>"
 - Zoek in de zandbak-repo je eigen commit
 - Maak een branch vertrekkende van die commit
   - Gebruik een goede en unieke naam!
+- Zorg ervoor dat de branch ook remote bestaat!
 - Verander je eigen file een beetje en push naar de nieuwe branch
 - Bewonder alle [branches op github](https://github.com/HOGENT-IT-Lab/gititdone-zandbak/branches)
 
@@ -564,6 +577,15 @@ jobs:
 - "Ik wou dat mijn branch begon op een andere commit!"
 - "Ik wou dat mijn commit verderbouwde op een andere commit!"
 - Oplossing: aanpassen van de **parent** van een commit of branch met `git rebase`
+
+---
+
+# Git fork
+
+- "Ik wil een eigen branch maken op deze repo, maar de repo is van iemand anders!"
+- Oplossing: **fork**
+- Via website
+![Fork w:1100](./img/fork.png)
 
 ---
 
