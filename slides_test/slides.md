@@ -74,6 +74,13 @@ https://www.github.com (**GitHub ≠ Git**)
 
 ---
 
+# Je git account
+
+**Stuur nu het gebruikte email-adres door naar alexander.veldeman@hogent.be**
+![alexander w:1140](./img/alexander.jpg)
+
+---
+
 # Git installeren
 
 - Beschikbaar voor Windows, MacOS en Linux (uiteraard)
@@ -236,8 +243,12 @@ Git kan je zowel via de CLI als GUI gebruiken
 - CLI: snel en efficiënt, iets hogere learning curve (maar niet veel!)
 - GUI: handig voor een visueel overzicht, maar er gebeurt veel *under the hood*
 - Vele IDE's hebben Git support ingebouwd!
-![Git gui](./img/git_gui.png)
 
+---
+
+# Voorbeeld: GitHub Desktop
+
+![Git gui w:1120](./img/git_gui.png)
 
 <!-- ---
 
@@ -258,7 +269,7 @@ Git kan je zowel via de CLI als GUI gebruiken
 ```
 git status  
  ```
- Gebruik dit commando na/voor elk ander commando!!
+ Gebruik dit commando na/voor elk ander commando!
 
 - Historie/commits weergeven
 ```
@@ -267,7 +278,7 @@ git log
 
 ---
 
-# Basiscommando's - lokaal
+# Basiscommando's - nieuwe repo
 - Van een lokale map een git repository maken
 ```
 git init
@@ -276,17 +287,16 @@ git init
 ```
 git clone <URL>
 ```
-- Wijzigingen in working directory aan staging toevoegen
-```
-git add <FILE>
-```
-
 
 ---
 
 
-# Basiscommando's - lokaal
+## Basiscommando's - lokaal naar remote
 
+- Wijzigingen in working directory aan staging toevoegen
+```
+git add <FILE>
+```
 - Alles toevoegen aan staging
 ```
 git add .
@@ -297,13 +307,32 @@ git add .
 git commit
 ```
 
+---
+
 - Meteen een (duidelijke!) commit message toevoegen
 ```
 git commit -m "DIT IS MIJN COMMIT MESSAGE"
 ```
 
+- Lokale repository naar een remote repository
+```
+git push
+```
+Tip: stel pushen niet uit! Vermijd merge conflicten (zie later)
+
 ---
 
+# Tijd voor een testpush!
+
+- Maak een repository op github.com
+- Clone: `git clone git@github.com:sionverschraege/testrepo.git`
+- Maak een nieuw bestandje aan **in de lokale working directory**
+- Voeg het bestand toe aan de **staging area**: `git add test.txt`
+- Maak een **commit** van alles in de staging area: `git commit -m "added test file"`
+- **Push** naar de remote repo: `git push`
+- Bewonder je bestand op github.com
+
+---
 
 # Basiscommando's - lokaal
 
@@ -311,7 +340,6 @@ git commit -m "DIT IS MIJN COMMIT MESSAGE"
 ```
 git merge
 ```
-
 ---
 
 # Basiscommando's - lokaal
@@ -334,12 +362,6 @@ git revert
 
 ----
 # Basiscommando's - remote
-
-- Lokale repository naar een remote repository
-```
-git push
-```
-Tip: stel pushen niet uit! Vermijd merge conflicten (zie later)
 
 - Remote repository naar lokale repository
 ```
