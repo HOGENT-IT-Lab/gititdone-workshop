@@ -568,7 +568,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Convert markdown to PDF
+      - name: Convert marhjererkdown to PDF
         uses: KoharaKazuya/marp-cli-action@v3
 ```
 ---
