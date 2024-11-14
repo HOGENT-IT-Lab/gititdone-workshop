@@ -41,6 +41,12 @@ foobar
 
 ---
 
+# Meevolgen op:
+https://hogent-it-lab.github.io/gititdone-workshop/slides
+
+![QR bg right contain](./img/link_qr.png)
+
+---
 
 # Wat is Git?
 - Git is een version control system (VCS)
@@ -61,6 +67,13 @@ foobar
 
 ---
 
+# Account maken op een git server
+https://www.github.com (**GitHub ≠ Git**)
+
+![git_signup w:1140](./img/git_signup.png)
+
+---
+
 # Git installeren
 
 - Beschikbaar voor Windows, MacOS en Linux (uiteraard)
@@ -71,47 +84,94 @@ foobar
 
 ---
 
+# Installatie controleren
+
+Commando `git`
+Bijvoorbeeld: `git --version`
+
+```
+C:\Users\sion_\Documents\gititdone-workshop> git --version
+git version 2.30.1.windows.1
+```
+
+---
+
 # Git configureren
 
-- Email en naam instellen
-```
- git config –global user.name <USERNAME>
-```
-```
- git config –global user.email <JOUW@EMAIL.ADRES>
- ```
-- Gebruikersnaam en email - laat deze matchen met jouw GitHub-account! (zie later)
+Commando: `git config`
+- `git config -l`: oplijsten
+- `git config --global -l`: instellingen voor heel het systeem
+- In een git map (later): `git config --local -l`
+- Instellingen aanpassen: `git config --global user.name NieuweNaam`
 
-- Mensen die meerdere accounts hebben: lokaal versus globale git config!
+---
+
+- Email en naam instellen **op waarden van GitHub account**
+```
+git config --global user.name <USERNAME>
+```
+```
+git config --global user.email <JOUW@EMAIL.ADRES>
+```
+Resultaat:
+```
+git config --global -l
+user.email=sion.verschraege@hogent.be
+user.name=sionverschraege
+```
+
+---
+
+# Geavanceerde configuratie
+
+- Lokaal heeft voorrang op globaal
+- Mensen die meerdere accounts hebben:
+  - Globaal meest gebruikte naam/email
+  - Lokaal per repo voor andere account
+  - Verschillende SSH-keys nodig
 
 ---
 
 # Git configureren - SSH sleutels
 
-- Waarvoor dienen SSH-sleutels? (kort)
-  
-- Hoe genereer ik zo'n sleutelpaar? `ssh-keygen` 
-- Modern sleutelpaar: `ssh-keygen -t ed25519`
+Data **encrypteren** en **handtekenen**
+Hoe genereer ik zo'n sleutelpaar? `ssh-keygen -t ed25519 -C "email@hogent.be"` 
+- aanhaalingstekens (`"`) moeten er staan
 
-- Public key toevoegen aan GitHub (demo?)
-
-- Extra: je kan verschillende keypairs gebruiken voor verschillende accounts/repo's! (voorbeeld Emilia)
+Terug te vinden in `[je home folder]/.ssh`:
+![keys](./img/keys.png)
 
 ---
 
-# Demo GitHub - account en keypair
+# Public key uploaden op GitHub
 
-- Maak een GitHub account (indien nog geen...)
-- Genereer een SSH-sleutelpaar (LET OP! check eerst of er eentje bestaat...)
+Settings -> SSH and GPG keys -> new SSH key
+- Kies een goede naam
+- Kies "Authentication Type"
+- Plak de sleutel **vanuit het pub bestand** in het tekstvak
 - Test met `ssh -T git@github.com`
+```
+ssh -T git@github.com
+Hi sionverschraege! You've successfully authenticated, but GitHub does not provide shell access.
+```
+
+---
+
+# Repository clonen
+Code van op de **git server** (github, **remote repository**) kopiëren naar eigen pc (**local repository**)
+- Deze slides (gemaakt in **markdown-code**) zijn [publiek](https://github.com/HOGENT-IT-Lab/gititdone-workshop)!
+- `git clone git@github.com:HOGENT-IT-Lab/gititdone-workshop.git` 
+
+![Git clone link w:800](./img/git%20clone%20link.png)
 
 ---
 # Git - commits
 
-- Om veranderingen bij te houden, maken we gebruik van *commits*
-- Commits bevatten één of meerdere wijzigingen in onze repository
-- Commits hebben altijd een bijhorende *commit message*
-- Commits hebben altijd een unieke *commit hash*
+- Om veranderingen bij te houden, maken we gebruik van **commits**
+- Commits bevatten één of meerdere **wijzigingen** in onze repository
+- Commits hebben altijd een bijhorende **commit message**
+- Commits hebben altijd een unieke **commit hash**
+- Commits bekijken: `git log` in git-mapje
 <!-- - Uitleg dat alle veranderingen worden bijgehouden in een 'commit'
 - Elke commit krijgt dan ook een commit hash (lange en korte eens uitleggen)
 - In een commit kunnen meerdere veranderingen tegelijk zitten -> we proberen ze allemaal atomair te houden!
