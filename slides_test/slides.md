@@ -542,6 +542,7 @@ git commit -m "<COMMIT MESSAGE>"
 - Manier om statische websites te hosten
 - Use case: deze slides! (in combinatie met GitHub Actions)
 - Eenvoudige websites, basic applicaties, ...
+- Voorbeeld: hosten van een [Godot game](https://github.com/CrimsonCloak/KnightGuy) gehost op GitHub pages
 
 ![bg right:50% 90%](./img/pages_example.png)
 
