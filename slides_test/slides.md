@@ -168,10 +168,10 @@ Code van op de **git server** (github, **remote repository**) kopiëren naar eig
 # Git - commits
 
 - Om veranderingen bij te houden, maken we gebruik van **commits**
+- Commits bekijken: `git log` in git-mapje
 - Commits bevatten één of meerdere **wijzigingen** in onze repository
 - Commits hebben altijd een bijhorende **commit message**
 - Commits hebben altijd een unieke **commit hash**
-- Commits bekijken: `git log` in git-mapje
 <!-- - Uitleg dat alle veranderingen worden bijgehouden in een 'commit'
 - Elke commit krijgt dan ook een commit hash (lange en korte eens uitleggen)
 - In een commit kunnen meerdere veranderingen tegelijk zitten -> we proberen ze allemaal atomair te houden!
@@ -182,7 +182,7 @@ Code van op de **git server** (github, **remote repository**) kopiëren naar eig
 
 # Commits - tips en best practices
 
-- Probeer je commits *atomair* te houden! (commit heeft een doel)
+- Probeer je commits **atomair** te houden! (commit heeft een doel)
 - Schrijf duidelijke commit messages!
 - Kom tot overeenkomst/structuur met jouw team (samenwerken)
 
