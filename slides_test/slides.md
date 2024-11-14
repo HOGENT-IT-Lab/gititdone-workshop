@@ -190,11 +190,12 @@ Code van op de **git server** (github, **remote repository**) kopiëren naar eig
 
 # Wat is een .gitignore bestand?
 
-- Soms wil je sommige zaken niet bijhouden in jouw version control (denk aan wachtwoorden, sensitieve data,...) 
-
-- .gitignore definieert wat je niet wilt tracken (voorbeeld met demo!)
+Soms wil je sommige zaken niet bijhouden in jouw version control (denk aan wachtwoorden, sensitieve data,...) 
+- `.gitignore` definieert wat je niet wilt tracken
 
 - Er bestaan heel wat templates voor verschillende projecten!
+
+- Kan ook wildcards gebruiken
 
 ---
 
@@ -226,18 +227,17 @@ Code van op de **git server** (github, **remote repository**) kopiëren naar eig
 - Meerdere slides hiervan maken hoor! -->
 <!-- IMG source: https://www.dezlearn.com/getting-started-with-git/ -->
 
-
-
-
 ---
 
 # Git - command line versus GUI
 
-- Git kan je zowel via de CLI als GUI gebruiken
+Git kan je zowel via de CLI als GUI gebruiken
 
 - CLI: snel en efficiënt, iets hogere learning curve (maar niet veel!)
-
 - GUI: handig voor een visueel overzicht, maar er gebeurt veel *under the hood*
+- Vele IDE's hebben Git support ingebouwd!
+![Git gui](./img/git_gui.png)
+
 
 <!-- ---
 
