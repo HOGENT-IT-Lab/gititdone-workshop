@@ -322,10 +322,19 @@ Tip: stel pushen niet uit! Vermijd merge conflicten (zie later)
 
 ---
 
+![bg contain](./img/git-workflow.png)
+
+---
+
+# Deze slide is een herinnering: Alexander moet tijdens de volgende slide een testfiletje maken en pushen naar HOGENT-IT-Lab/gititdone-workshop.git
+
+---
+
 # Tijd voor een testpush!
 
 - Maak een repository op github.com
 - Clone: `git clone git@github.com:sionverschraege/testrepo.git`
+  - Clone NIET in je andere repo!
 - Maak een nieuw bestandje aan **in de lokale working directory**
 - Voeg het bestand toe aan de **staging area**: `git add test.txt`
 - Maak een **commit** van alles in de staging area: `git commit -m "added test file"`
@@ -334,22 +343,52 @@ Tip: stel pushen niet uit! Vermijd merge conflicten (zie later)
 
 ---
 
-# Basiscommando's - lokaal
+## Basiscommando's - remote naar lokaal
 
-- Lokale git-repository naar working directory
+- Remote repository naar lokale repository
+```
+git fetch
+```
+- Dit verandert je *working copy* niet, het updatet enkel de data in je **lokale repository**
+- Je moet een remote repository ingesteld hebben (zie verder)
+  - Dit gebeurt automatisch bij clonen, niet bij init
+
+----
+## Basiscommando's - remote naar lokaal
+
+- Lokale repository naar working directory
 ```
 git merge
 ```
+- Tegelijk fetchen en mergen
+```
+git pull
+```
+
 ---
 
-# Basiscommando's - lokaal
+![bg contain](./img/git-workflow.png)
 
-- Unstagen van wijziging
+---
+
+# Tijd voor een testpull!
+
+- Vraag Alexander of het testfiletje aangemaakt is
+- Ga terug naar de lokale map voor `HOGENT-IT-Lab/gititdone-workshop.git`
+- Gebruik `git fetch` om de nieuwe informatie op te vragen
+- Gebruik `git merge` om het bestand in je workspace te krijgen
+- Bewonder het bestand in je lokale mapje
+
+---
+
+# Basiscommando's - oeps...
+
+- **Unstagen** van wijziging
 ```
 git reset
 ```
 
-- Recentste commit ongedaan maken
+- Recentste commit (lokaal) ongedaan maken
 ```
 git reset HEAD~1
 ```
@@ -358,20 +397,8 @@ git reset HEAD~1
 ```
 git revert
 ```
-<!-- TO DO beter uitleggen in slides! -->
 
-----
-# Basiscommando's - remote
-
-- Remote repository naar lokale repository
-```
-git fetch
-```
-
-Belangrijk! Je moet een remote repository ingesteld hebben
-
---- 
-
+---
 # Basiscommando's - remote
 
 - Checken of er een remote is ingesteld
@@ -380,15 +407,15 @@ Belangrijk! Je moet een remote repository ingesteld hebben
 git remote
 ```
 
+- Voor meer informatie (URL, push/fetch)
+
+```
+git remote -v
+```
+
 - Remote toevoegen aan lokale repository (bv origin)
 ```
 git remote add origin <URL>
-```
-
-- Remote repository naar lokale werkomgeving (fetch + merge)
-
-```
-git pull
 ```
 
 ---
@@ -398,22 +425,31 @@ git pull
 
 ![bg right:50% 80%](./img/git_grappig_plaatje.png)
 
---- 
-# Demo basic workflow
+---
 
-- Klassieke git workflow
-```
-git add .
+# Git - merge conflicten
 
-git commit -m "Fix myFunction function: supports multiple parameters now"
+- Wat zijn merge conflicten? 
+- Wanneer ontstaan deze?
+- Hoe kan je deze oplossen?
 
-git pull
-
-git push
-```
+Al dit en meer in de volgende live demo
 
 ---
 
+# Doe-het-zelf merge conflict
+
+- Clone [het zandbakproject](https://github.com/HOGENT-IT-Lab/gititdone-zandbak)
+  - `git clone git@github.com:HOGENT-IT-Lab/gititdone-zandbak.git`
+- Spreek met je buur of buren af welke bestandsnaam je gebruikt
+- Maak elk, lokaal, dit bestand aan, en zet er elk iets (anders) in
+  - Hou het alstublieft een beetje deftig
+  - Vergeet niet dat commits op naam staan
+- Push allemaal dit bestand
+- Los de merge conflicten op
+- Pull, en bewonder de samengestelde bestandjes
+
+---
 
 # Git - branches
 
@@ -439,20 +475,6 @@ OF
 git switch <NAAMBRANCH>
 ```
 
----
-
-
-# Git - merge conflicten
-
-- Wat zijn merge conflicten? 
-- Wanneer ontstaan deze?
-- Hoe kan je deze oplossen (BELANGRIJK - demo!!)
-
----
-
-# Demo merge conflict
-
-Laat ons eens een merge conflict veroorzaken en ook oplossen...
 
 ---
 # Git - samenwerken
