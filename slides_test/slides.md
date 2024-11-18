@@ -581,14 +581,6 @@ jobs:
 
 ---
 
-# Git fork
-
-- "Ik wil een eigen branch maken op deze repo, maar de repo is van iemand anders!"
-- Oplossing: **fork**
-- Via website
-![Fork w:1100](./img/fork.png)
-
----
 
 ```
 git rebase main newBranch
@@ -596,6 +588,15 @@ git rebase main newBranch
 
 ![bg w:60% 60%](./img/branch2.png)
 ![bg w:60% 60%](./img/branchRebase.png)
+
+---
+
+# Git fork
+
+- "Ik wil een eigen branch maken op deze repo, maar de repo is van iemand anders!"
+- Oplossing: **fork**
+- Via website
+![Fork w:1100](./img/fork.png)
 
 ---
 
