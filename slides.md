@@ -338,6 +338,7 @@ Tip: stel pushen niet uit! Vermijd merge conflicten (zie later)
 # Tijd voor een testpush!
 
 - Maak een repository op github.com
+  - Je mag deze aanmaken met een README-bestand inbegrepen!
 - Clone jouw repository: `git clone <URL>`
   - Clone NIET in je andere repo!
 - Maak een nieuw bestandje aan **in de lokale working directory**
@@ -383,7 +384,7 @@ git pull
 - Ga terug naar de lokale map voor jouw repository.
 - Gebruik `git fetch` om de nieuwe informatie op te vragen
 - Gebruik `git merge` om het bestand in je workspace te krijgen
-  - Dit is dus in essentie een `git pull`
+  - Dit is dus in essentie een `git pull`!
 - Bewonder het bestand in je lokale mapje!
 
 ---
@@ -436,11 +437,20 @@ git remote add origin <URL>
 
 # Git - merge conflicten
 
-- Git is slim, maar weet niet alles
-- Rebasen lost al veel hiervan op!
+- Git is slim, maar de git history moet logisch zijn!
+- Als je lang naast elkaar werkt, of in duo werkt, heb je soms merge conflicten
+  - Vanuit het perspectief van git klopt er iets niet in de tijdslijn
+  - Je moet dit oplossen met een merge commit en de knoop doorhakken
+- Rebasen bij een pull lost al veel hiervan op!
 ---
 
-# Doe-het-zelf merge conflict
+# Git - merge conflicten
+
+![bg contain](./img/merge-conflict.png)
+
+---
+
+# Doe-het-zelf merge conflict - simulatie
 
 - Maak een eigen repository aan
 - Creeër een tekstbestand met inhoud van 1 zin.
@@ -448,6 +458,18 @@ git remote add origin <URL>
 - Pas via GitHub.com de zin aan
 - Pas de zin lokaal aan en probeer te pushen!
 - Dit simuleert een merge conflict
+- Je zal handmatig moeten bepalen wat de eindtoestand moet zijn (merge conflict oplossen)
+
+---
+
+# Doe-het-zelf merge conflict - real-life
+
+- Maak een eigen repository aan en nodig een mede developer uit
+- Creeër een tekstbestand met inhoud van 1 zin.
+- Pull elk de repository lokaal
+- Pas lokaal elk de inhoud van de zin aan
+- Probeer elk na elkaar te pushen
+- De eerste persoon zal niets merken, de volgende persoon zal zitten met het conflict!
 - Je zal handmatig moeten bepalen wat de eindtoestand moet zijn (merge conflict oplossen)
 
 ---
@@ -521,7 +543,7 @@ jobs:
 
 # Git fork
 
-- "Ik wil een eigen branch maken op deze repo, maar de repo is van iemand anders!"
+- "Ik wil een eigen branch of changes maken op deze repo, maar de repo is van iemand anders!"
 - Oplossing: **fork**
 - Via website
 ![Fork w:1100](./img/fork.png)
