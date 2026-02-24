@@ -531,6 +531,7 @@ jobs:
 ## Handige/interessante links
 
 - Git(Hub) guide van HOGENT - https://hogenttin.github.io/git-hogent-gids/
+- Kennisclips SELab over [configuratie](https://hogent.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=805ea5e2-71b5-4a77-8587-b3f2016d0d2c), [basic flow](https://hogent.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=c99ea177-1945-4bf2-a902-b3f201720b02) en [merge conflict demo](https://hogent.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=3b85e941-26e7-4938-a853-b3f2017a5ccc)
 - Leren branchen - https://learngitbranching.js.org/
 - Templates .gitignore - https://github.com/github/gitignore
 - Wat als het allemaal in de soep loopt? - https://ohshitgit.com/
