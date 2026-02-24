@@ -74,13 +74,6 @@ https://www.github.com (**GitHub ≠ Git**)
 
 ---
 
-# Je git account
-
-**Stuur nu het gebruikte email-adres door naar alexander.veldeman@hogent.be**
-![alexander w:1140](./img/alexander.jpg)
-
----
-
 # Git installeren
 
 - Beschikbaar voor Windows, MacOS en Linux (uiteraard)
@@ -129,6 +122,20 @@ user.name=sionverschraege
 
 ---
 
+- Enkele andere belangrijke instellingen die je best uitvoert!
+
+```
+git config --global push.default simple
+git config --global core.autocrlf true   # <- Windows only!
+git config --global core.autocrlf input  # <- macOS/Linux only!
+git config --global init.defaultBranch main
+git config --global pull.rebase true # <- Bespaart heel veel merge-issues!
+git config --global rebase.autoStash true
+git config --global core.ignorecase false
+```
+
+---
+
 # Geavanceerde configuratie
 
 - Lokaal heeft voorrang op globaal
@@ -142,11 +149,13 @@ user.name=sionverschraege
 # Git configureren - SSH sleutels
 
 Data **encrypteren** en **handtekenen**
-Hoe genereer ik zo'n sleutelpaar? `ssh-keygen -t ed25519 -C "email@hogent.be"` 
-- aanhalingstekens (`"`) moeten er staan
+Hoe genereer ik zo'n sleutelpaar? `ssh-keygen`
+
+Maak geen default key aan als je al eentje hebt! Check dit eerst.
 
 Terug te vinden in `[je home folder]/.ssh`:
 ![keys](./img/keys.png)
+
 
 ---
 
@@ -191,7 +200,7 @@ Code van op de **git server** (github, **remote repository**) kopiëren naar eig
 
 - Probeer je commits **atomair** te houden! (commit heeft een doel)
 - Schrijf duidelijke commit messages!
-- Kom tot overeenkomst/structuur met jouw team (samenwerken)
+- Kom tot overeenkomst/structuur met jouw team (samenwerken!!!)
 
 ---
 
@@ -326,14 +335,10 @@ Tip: stel pushen niet uit! Vermijd merge conflicten (zie later)
 
 ---
 
-# Deze slide is een herinnering: Alexander moet tijdens de volgende slide een testfiletje maken en pushen naar HOGENT-IT-Lab/gititdone-workshop.git
-
----
-
 # Tijd voor een testpush!
 
 - Maak een repository op github.com
-- Clone: `git clone git@github.com:sionverschraege/testrepo.git`
+- Clone jouw repository: `git clone <URL>`
   - Clone NIET in je andere repo!
 - Maak een nieuw bestandje aan **in de lokale working directory**
 - Voeg het bestand toe aan de **staging area**: `git add test.txt`
@@ -373,11 +378,13 @@ git pull
 
 # Tijd voor een testpull!
 
-- Vraag Alexander of het testfiletje aangemaakt is
-- Ga terug naar de lokale map voor `HOGENT-IT-Lab/gititdone-workshop.git`
+- Breng via GitHub.com zelf een wijziging aan in je repo
+  - Toevoegen testbestand of een aanpassing in een bestaand bestand
+- Ga terug naar de lokale map voor jouw repository.
 - Gebruik `git fetch` om de nieuwe informatie op te vragen
 - Gebruik `git merge` om het bestand in je workspace te krijgen
-- Bewonder het bestand in je lokale mapje
+  - Dit is dus in essentie een `git pull`
+- Bewonder het bestand in je lokale mapje!
 
 ---
 
@@ -429,25 +436,19 @@ git remote add origin <URL>
 
 # Git - merge conflicten
 
-- Wat zijn merge conflicten? 
-- Wanneer ontstaan deze?
-- Hoe kan je deze oplossen?
-
-Al dit en meer in de volgende live demo
-
+- Git is slim, maar weet niet alles
+- Rebasen lost al veel hiervan op!
 ---
 
 # Doe-het-zelf merge conflict
 
-- Clone [het zandbakproject](https://github.com/HOGENT-IT-Lab/gititdone-zandbak)
-  - `git clone git@github.com:HOGENT-IT-Lab/gititdone-zandbak.git`
-- Spreek met je buur of buren af welke bestandsnaam je gebruikt
-- Maak elk, lokaal, dit bestand aan, en zet er elk iets (anders) in
-  - Hou het alstublieft een beetje deftig
-  - Vergeet niet dat commits op naam staan
-- Push allemaal dit bestand
-- Los de merge conflicten op
-- Pull, en bewonder de samengestelde bestandjes
+- Maak een eigen repository aan
+- Creeër een tekstbestand met inhoud van 1 zin.
+- Pull de repository lokaal
+- Pas via GitHub.com de zin aan
+- Pas de zin lokaal aan en probeer te pushen!
+- Dit simuleert een merge conflict
+- Je zal handmatig moeten bepalen wat de eindtoestand moet zijn (merge conflict oplossen)
 
 ---
 
