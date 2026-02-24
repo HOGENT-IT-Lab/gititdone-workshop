@@ -467,63 +467,8 @@ git remote add origin <URL>
 - Oplossing: **branches**
 - Branches zijn **parallelle versies**
 - Branches kunnen later weer **samengevoegd** worden
-
+- Meer hierover in GitItDone part 2!
 ![bg right:50% 80%](./img/branching_visual_cue.png)
-
----
-
-# Branches - commando's
-
-- Je wil vertrekken van commit X. Ga naar die commit met
-```
-git checkout <COMMIT_HASH>
-```
-- Dit mag een kortere hash zijn
-- Nieuwe branch aanmaken
-```
-git branch <NAAMBRANCH>
-```
-- Voorlopig is dit gewoon een **verwijzing** naar de gekozen commit
-![bg right:40% 80%](./img/branch1.png)
-
-
----
-
-# Branches - commando's
-- Pushen naar remote:
-```
-git push -u origin <NAAMBRANCH>
-```
-- Of meteen branch maken op local en remote:
-```
-git checkout -b <NIEUWEBRANCH>
-```
-
----
-
-# Branches - commando's
-
-- Wisselen naar branch 
-```
-git checkout <NAAMBRANCH>
-```
-- Maak een commit op die branch
-```
-git add <BESTAND>
-git commit -m "<COMMIT MESSAGE>"
-```
-![bg right:40% 80%](./img/branch2.png)
-
----
-
-# Branches - doe het zelf
-
-- Zoek in de zandbak-repo je eigen commit
-- Maak een branch vertrekkende van die commit
-  - Gebruik een goede en unieke naam!
-- Zorg ervoor dat de branch ook remote bestaat!
-- Verander je eigen file een beetje en push naar de nieuwe branch
-- Bewonder alle [branches op github](https://github.com/HOGENT-IT-Lab/gititdone-zandbak/branches)
 
 ---
 
@@ -572,24 +517,6 @@ jobs:
       - name: Convert marhjererkdown to PDF
         uses: KoharaKazuya/marp-cli-action@v3
 ```
----
-
-# Git rebase 
-
-- "Ik wou dat mijn branch begon op een andere commit!"
-- "Ik wou dat mijn commit verderbouwde op een andere commit!"
-- Oplossing: aanpassen van de **parent** van een commit of branch met `git rebase`
-
----
-
-
-```
-git rebase main newBranch
-```
-
-![bg w:60% 60%](./img/branch2.png)
-![bg w:60% 60%](./img/branchRebase.png)
-
 ---
 
 # Git fork
