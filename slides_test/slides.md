@@ -236,7 +236,7 @@ Soms wil je sommige zaken niet bijhouden in jouw version control (denk aan wacht
 ---
 # Git workflow
 
-![bg right:60% 80%](./img/git-workflow.png)
+![bg contain:100% 65%](./img/git-workflow.png)
 
 <!-- - Veranderingen bijhouden en zo doen aan version control!
 - Met remote: zelfde concept, maar collaboratief!
