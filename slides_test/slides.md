@@ -543,7 +543,7 @@ jobs:
 
 # Git fork
 
-- "Ik wil een eigen branch maken op deze repo, maar de repo is van iemand anders!"
+- "Ik wil een eigen branch of changes maken op deze repo, maar de repo is van iemand anders!"
 - Oplossing: **fork**
 - Via website
 ![Fork w:1100](./img/fork.png)
